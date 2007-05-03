@@ -16,6 +16,7 @@ BuildRequires:  libxml2-devel
 BuildRequires:  avahi-glib-devel
 BuildRequires:  avahi-client-devel
 BuildRequires:  libxslt-proc 
+BuildRequires:  telepathy-glib
 
 Requires:	telepathy-filesystem
 
