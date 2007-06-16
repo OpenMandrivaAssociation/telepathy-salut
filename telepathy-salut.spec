@@ -1,6 +1,6 @@
 Name:           telepathy-salut
 Version:        0.1.3
-Release:        %mkrel 2
+Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
 Group:          Networking/Instant messaging
@@ -17,7 +17,7 @@ BuildRequires:  avahi-glib-devel
 BuildRequires:  avahi-client-devel
 BuildRequires:  libxslt-proc 
 BuildRequires:  telepathy-glib
-
+BuildRequires:  python-pyxml
 Requires:	telepathy-filesystem
 
 
