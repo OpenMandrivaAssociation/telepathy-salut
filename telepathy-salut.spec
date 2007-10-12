@@ -1,5 +1,5 @@
 Name:           telepathy-salut
-Version:        0.1.3
+Version:        0.1.5
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
@@ -15,14 +15,14 @@ BuildRequires:  dbus-glib-devel
 BuildRequires:  libxml2-devel
 BuildRequires:  avahi-glib-devel
 BuildRequires:  avahi-client-devel
-BuildRequires:  libxslt-proc 
+BuildRequires:  libxslt-proc
 BuildRequires:  telepathy-glib
 BuildRequires:  python-pyxml
 Requires:	telepathy-filesystem
 
 
 %description
-telepathy-salut is a connection manager implementing link-local 
+telepathy-salut is a connection manager implementing link-local
 messaging for XMPP
 
 http://www.xmpp.org/extensions/xep-0174.html
