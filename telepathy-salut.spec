@@ -1,5 +1,5 @@
 Name:           telepathy-salut
-Version:        0.1.5
+Version:        0.2.0
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
@@ -30,7 +30,8 @@ http://www.xmpp.org/extensions/xep-0174.html
 
 %files
 %defattr(-,root,root,-)
-%{_bindir}/telepathy-salut
+%{_libdir}/telepathy-salut
+%{_mandir}/man8/telepathy-salut.8.lzma
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.salut.service
 %{_datadir}/telepathy/managers/salut.manager
 
