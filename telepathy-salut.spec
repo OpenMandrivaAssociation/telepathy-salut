@@ -6,7 +6,7 @@ Summary:        Connection manager implementing link-local messaging for XMPP
 Group:          Networking/Instant messaging
 License:        LGPL
 URL:            http://telepathy.freedesktop.org/wiki/
-Source0:        http://telepathy.freedesktop.org/releases/%{name}_%version.orig.tar.gz
+Source0:        http://telepathy.freedesktop.org/releases/%{name}-%version.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  pkgconfig
