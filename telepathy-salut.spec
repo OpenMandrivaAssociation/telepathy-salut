@@ -17,7 +17,7 @@ BuildRequires:  avahi-glib-devel
 BuildRequires:  avahi-client-devel
 BuildRequires:  avahi-gobject-devel
 BuildRequires:  libxslt-proc
-BuildRequires:  telepathy-glib-devel
+BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  python-pyxml
 BuildRequires:  gtk-doc
 Requires:	telepathy-filesystem
