@@ -17,11 +17,10 @@ BuildRequires:  avahi-glib-devel
 BuildRequires:  avahi-client-devel
 BuildRequires:  avahi-gobject-devel
 BuildRequires:  libxslt-proc
-BuildRequires:  telepathy-glib
+BuildRequires:  telepathy-glib-devel
 BuildRequires:  python-pyxml
 BuildRequires:  gtk-doc
 Requires:	telepathy-filesystem
-
 
 %description
 telepathy-salut is a connection manager implementing link-local
@@ -29,12 +28,11 @@ messaging for XMPP
 
 http://www.xmpp.org/extensions/xep-0174.html
 
-
 %files
 %defattr(-,root,root,-)
 %{_libdir}/telepathy-salut
-%{_mandir}/man8/telepathy-salut.8.lzma
-%{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.salut.service
+%{_mandir}/man8/telepathy-salut.8.*
+%{_datadir}/dbus-1/services/*.service
 %{_datadir}/telepathy/managers/salut.manager
 
 #--------------------------------------------------------------------
@@ -42,19 +40,13 @@ http://www.xmpp.org/extensions/xep-0174.html
 %prep
 %setup -q
 
-
 %build
-%configure --enable-gtk-doc --enable-handle-leak-debug
-make %{?_smp_mflags}
-
+%configure2_5x --enable-gtk-doc --enable-handle-leak-debug
+%make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
-
+%makeinstall_std
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-
-
