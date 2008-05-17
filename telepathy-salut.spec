@@ -1,12 +1,12 @@
 Name:           telepathy-salut
-Version:        0.3.0
+Version:        0.3.2
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
 Group:          Networking/Instant messaging
-License:        LGPL
+License:        LGPLv2+
 URL:            http://telepathy.freedesktop.org/wiki/
-Source0:        http://telepathy.freedesktop.org/releases/%{name}-%version.tar.gz
+Source0:        http://telepathy.freedesktop.org/releases/%name/%{name}-%version.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  pkgconfig
