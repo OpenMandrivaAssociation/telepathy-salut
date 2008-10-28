@@ -42,7 +42,7 @@ http://www.xmpp.org/extensions/xep-0174.html
 %setup -q
 
 %build
-%configure2_5x --enable-gtk-doc --enable-handle-leak-debug
+%configure2_5x --enable-gtk-doc --enable-handle-leak-debug --enable-olpc
 %make
 
 %install
