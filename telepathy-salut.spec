@@ -20,7 +20,8 @@ BuildRequires:  libxslt-proc
 BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  python-pyxml
 BuildRequires:  gtk-doc
-Requires:	telepathy-filesystem
+BuildRequires:  libsoup-devel
+Requires:       telepathy-filesystem
 
 %description
 telepathy-salut is a connection manager implementing link-local
