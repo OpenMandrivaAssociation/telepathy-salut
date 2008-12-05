@@ -20,7 +20,7 @@ BuildRequires:  libxslt-proc
 BuildRequires:  libtelepathy-glib-devel
 BuildRequires:  python-pyxml
 BuildRequires:  gtk-doc
-BuildRequires:  libsoup-devel
+BuildRequires:  libsoup-2.2-devel
 Requires:       telepathy-filesystem
 
 %description
