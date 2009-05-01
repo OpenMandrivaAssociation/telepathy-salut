@@ -1,5 +1,5 @@
 Name:           telepathy-salut
-Version:        0.3.8
+Version:        0.3.9
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
