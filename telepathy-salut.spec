@@ -1,6 +1,6 @@
 Name:           telepathy-salut
 Version:        0.3.10
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        Connection manager implementing link-local messaging for XMPP
 
 Group:          Networking/Instant messaging
@@ -31,7 +31,7 @@ http://www.xmpp.org/extensions/xep-0174.html
 
 %files
 %defattr(-,root,root,-)
-%doc docs/clique.xml NEWS README ChangeLog
+%doc docs/clique.xml NEWS README 
 %{_libdir}/telepathy-salut
 %{_mandir}/man8/telepathy-salut.8.*
 %{_datadir}/dbus-1/services/*.service
