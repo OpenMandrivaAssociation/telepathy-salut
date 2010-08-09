@@ -1,5 +1,5 @@
 Name:           telepathy-salut
-Version:        0.3.11
+Version:        0.3.12
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
@@ -13,12 +13,10 @@ BuildRequires:  pkgconfig
 BuildRequires:  glib2-devel
 BuildRequires:  dbus-glib-devel
 BuildRequires:  libxml2-devel
-BuildRequires:  avahi-glib-devel
-BuildRequires:  avahi-client-devel
 BuildRequires:  avahi-gobject-devel
 BuildRequires:  libxslt-proc
 BuildRequires:  libtelepathy-glib-devel
-BuildRequires:  python-pyxml
+BuildRequires:  python
 BuildRequires:  gtk-doc
 BuildRequires:  libsoup-2.4-devel
 Requires:       telepathy-filesystem
@@ -43,14 +41,14 @@ http://www.xmpp.org/extensions/xep-0174.html
 %setup -q
 
 %build
-%configure2_5x --enable-gtk-doc --enable-handle-leak-debug --enable-olpc
+%configure2_5x --enable-gtk-doc --enable-olpc
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 rm -f %buildroot%_datadir/%name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
