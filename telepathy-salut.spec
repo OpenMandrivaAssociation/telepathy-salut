@@ -20,6 +20,7 @@ BuildRequires:  python
 BuildRequires:  gtk-doc
 BuildRequires:  libsoup-2.4-devel
 BuildRequires:  libuuid-devel
+BuildRequires:	python-xmldiff
 Requires:       telepathy-filesystem
 
 %description
