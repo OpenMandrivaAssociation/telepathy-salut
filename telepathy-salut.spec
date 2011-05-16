@@ -1,5 +1,5 @@
 Name:           telepathy-salut
-Version:        0.5.0
+Version:        0.4.0
 Release:        %mkrel 1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
@@ -20,7 +20,6 @@ BuildRequires:  python
 BuildRequires:  gtk-doc
 BuildRequires:  libsoup-2.4-devel
 BuildRequires:  libuuid-devel
-BuildRequires:	python-xmldiff
 Requires:       telepathy-filesystem
 
 %description
