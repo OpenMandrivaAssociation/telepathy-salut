@@ -1,8 +1,9 @@
 %define libdev %mklibname %name -d
+%define _disable_ld_no_undefined 1
 
 Name:           telepathy-salut
-Version:        0.8.0
-Release:        %mkrel 1
+Version:        0.8.1
+Release:        1
 Summary:        Connection manager implementing link-local messaging for XMPP
 
 Group:          Networking/Instant messaging
