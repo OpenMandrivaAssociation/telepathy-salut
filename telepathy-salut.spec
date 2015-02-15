@@ -18,13 +18,12 @@ BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	avahi-gobject-devel
 BuildRequires:	pkgconfig(libexslt)
 BuildRequires:	pkgconfig(telepathy-glib)
-BuildRequires:	python
-BuildRequires:	python-twisted
-BuildRequires:	avahi-python
+BuildRequires:	python2
+BuildRequires:	python2-twisted
 BuildRequires:	gtk-doc
 BuildRequires:	libsoup-devel
 BuildRequires:	pkgconfig(uuid)
-BuildRequires:	python-xmldiff
+BuildRequires:	python2-xmldiff
 BuildRequires:	pkgconfig(gnutls)
 Requires:	telepathy-filesystem
 
@@ -70,7 +69,7 @@ you will need to install %{name}-devel.
 %setup -q
 
 %build
-%configure2_5x --enable-gtk-doc --enable-olpc --disable-static
+%configure --enable-gtk-doc --enable-olpc PYTHON=%__python2
 %make
 
 %install
