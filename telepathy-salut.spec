@@ -69,7 +69,7 @@ you will need to install %{name}-devel.
 %setup -q
 
 %build
-%configure --enable-gtk-doc --enable-olpc PYTHON=%__python2
+%configure --enable-gtk-doc --enable-olpc --disable-avahi-tests PYTHON=%__python2
 %make
 
 %install
