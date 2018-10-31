@@ -3,7 +3,7 @@
 
 Name:           telepathy-salut
 Version:        0.8.1
-Release:        10
+Release:        11
 Summary:        Connection manager implementing link-local messaging for XMPP
 
 Group:          Networking/Instant messaging
