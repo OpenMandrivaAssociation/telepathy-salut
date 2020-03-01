@@ -23,7 +23,7 @@ BuildRequires:	python2-twisted
 BuildRequires:	gtk-doc
 BuildRequires:	libsoup-devel
 BuildRequires:	pkgconfig(uuid)
-BuildRequires:	python2-xmldiff
+BuildRequires:	python-xmldiff
 BuildRequires:	pkgconfig(gnutls)
 Requires:	telepathy-filesystem
 
@@ -34,7 +34,7 @@ messaging for XMPP
 http://www.xmpp.org/extensions/xep-0174.html
 
 %files -n %name
-%doc docs/clique.xml NEWS README 
+%doc docs/clique.xml docs/clique.html NEWS README
 #%{_libdir}/telepathy/salut-*/lib/*plugins
 %{_libdir}/telepathy/salut-*/*/libsalut-plugins-%version.so
 %{_libdir}/telepathy/salut-*/*/libwocky-telepathy-salut-%version.so
