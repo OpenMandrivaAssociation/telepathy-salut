@@ -7,7 +7,7 @@ Release:	13
 Summary:	Connection manager implementing link-local messaging for XMPP
 Group:		Networking/Instant messaging
 License:	LGPLv2+
-URL:		http://telepathy.freedesktop.org/wiki/
+URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%name/%{name}-%version.tar.gz
 Source100:	telepathy-salut.rpmlintrc
 Patch0:		https://abf.io/import/telepathy-salut/raw/rosa2021.1/telepathy-salut-0.8.1-python3-syntax.patch
