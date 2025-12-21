@@ -11,6 +11,11 @@ URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%name/%{name}-%version.tar.gz
 Source100:	telepathy-salut.rpmlintrc
 Patch0:		https://abf.io/import/telepathy-salut/raw/rosa2021.1/telepathy-salut-0.8.1-python3-syntax.patch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(dbus-glib-1)
 BuildRequires:	pkgconfig(libxml-2.0)
