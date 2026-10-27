@@ -11,6 +11,8 @@ URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%name/%{name}-%version.tar.gz
 Patch0:		https://abf.io/import/telepathy-salut/raw/rosa2021.1/telepathy-salut-0.8.1-python3-syntax.patch
 # libxml2 2.15 made the SAX error callback take a const xmlError.
+# glib g_object_ref() returns typeof(argument); cast before the call
+# when the destination is a subclass pointer.
 Patch1:		telepathy-salut-0.8.1-libxml-wocky.patch
 BuildRequires:	autoconf
 BuildRequires:	automake

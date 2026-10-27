@@ -29,3 +29,14 @@
  
    out->type = type;
    out->sub_type = sub_type;
+--- a/src/contact-manager.c
++++ b/src/contact-manager.c
+@@ -177,7 +177,7 @@
+ 
+   base_connection = tp_base_contact_list_get_connection (
+       (TpBaseContactList *) self, NULL);
+-  self->connection = g_object_ref (base_connection);
++  self->connection = g_object_ref (SALUT_CONNECTION (base_connection));
+ 
+   contact_repo = tp_base_connection_get_handles (base_connection,
+       TP_HANDLE_TYPE_CONTACT);
