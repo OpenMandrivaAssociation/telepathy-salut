@@ -1,0 +1,31 @@
+--- a/lib/ext/wocky/wocky/wocky-xmpp-reader.c
++++ b/lib/ext/wocky/wocky/wocky-xmpp-reader.c
+@@ -67,7 +67,7 @@
+ 
+ static void _characters (void *user_data, const xmlChar *ch, int len);
+ 
+-static void _error (void *user_data, xmlErrorPtr error);
++static void _error (void *user_data, const xmlError *error);
+ 
+ static xmlSAXHandler parser_handler = {
+   /* internalSubset         */ NULL,
+@@ -617,7 +617,7 @@
+ }
+ 
+ static void
+-_error (void *user_data, xmlErrorPtr error)
++_error (void *user_data, const xmlError *error)
+ {
+   WockyXmppReader *self = WOCKY_XMPP_READER (user_data);
+   WockyXmppReaderPrivate *priv = self->priv;
+--- a/lib/ext/wocky/wocky/wocky-meta-porter.c
++++ b/lib/ext/wocky/wocky/wocky-meta-porter.c
+@@ -1268,7 +1268,7 @@
+   out->porters = g_hash_table_new (NULL, NULL);
+ 
+   if (contact != NULL)
+-    out->contact = g_object_ref (contact);
++    out->contact = g_object_ref (WOCKY_CONTACT (contact));
+ 
+   out->type = type;
+   out->sub_type = sub_type;
