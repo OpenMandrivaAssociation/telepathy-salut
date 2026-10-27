@@ -9,11 +9,9 @@ Group:		Networking/Instant messaging
 License:	LGPLv2+
 URL:		https://telepathy.freedesktop.org/wiki/
 Source0:	http://telepathy.freedesktop.org/releases/%name/%{name}-%version.tar.gz
-Source100:	telepathy-salut.rpmlintrc
 Patch0:		https://abf.io/import/telepathy-salut/raw/rosa2021.1/telepathy-salut-0.8.1-python3-syntax.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	libtool-base
 BuildRequires:	slibtool
 BuildRequires:	make
 BuildRequires:	pkgconfig(glib-2.0)
@@ -22,8 +20,8 @@ BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	avahi-gobject-devel
 BuildRequires:	pkgconfig(libexslt)
 BuildRequires:	pkgconfig(telepathy-glib)
-BuildRequires:	python2
-BuildRequires:	python2-twisted
+# Twisted is only imported by the avahi tests, which this build disables.
+BuildRequires:	python
 BuildRequires:	gtk-doc
 BuildRequires:	libsoup-devel
 BuildRequires:	pkgconfig(uuid)
@@ -39,7 +37,7 @@ http://www.xmpp.org/extensions/xep-0174.html
 
 %files -n %{name}
 %doc docs/clique.xml docs/clique.html NEWS README
-#%{_libdir}/telepathy/salut-*/lib/*plugins
+# plugins used to live under the telepathy plugin directory
 %{_libdir}/telepathy/salut-*/*/libsalut-plugins-%version.so
 %{_libdir}/telepathy/salut-*/*/libwocky-telepathy-salut-%version.so
 %{_libexecdir}/telepathy-salut
